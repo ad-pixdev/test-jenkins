@@ -1,7 +1,7 @@
 #!/bin/sh
- 
+# AC 04-05-2015 exécuté sous jenkins sans ssh (serveur identique) 
 #ssh app@APP.SERVER.IP.ADDRESS <<EOF
-  cd /var/www/hello-jenkins
+  cd /var/www/test-jenkins
   git pull
   npm install --production
   forever restartall
